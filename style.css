@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600');
+
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+
+  --very-dark-blue-mainbg: hsl(217, 54%, 11%);
+  --very-dark-blue-cardbg: hsl(216, 50%, 16%);
+  --very-dark-blue-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  background: var(--very-dark-blue-mainbg);
+}
+  
+main {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nft-component {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 350px;
+
+  background: var(--very-dark-blue-cardbg);
+  border-radius: 15px;
+
+  font-family: Outfit;
+  color: var(--soft-blue);
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.nft-component__image {
+  width: 88%;
+  margin-top: 6%;
+
+  border-radius: 10px;
+}
+
+.nft-component__info {
+  width: 88%;
+  margin-bottom: 6%;
+}
+
+.nft-component__name {
+  color: var(--white);
+  font-weight: 600;
+}
+
+.nft-component__description {
+  color: var(--soft-blue);
+  margin: .5rem 0;
+}
+
+.nft-component__details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nft-component__nft-amount {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+
+  color: var(--cyan);
+  font-weight: 600;
+}
+
+.nft-component__deadline {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+
+  color: var(--soft-blue);
+  font-weight: 400;
+}
+
+.nft-component hr {
+  color: var(--very-dark-blue-line);
+}
+
+.nft-component__author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nft-component__author-avatar {
+  border: 2px solid white;
+  border-radius: 50%;
+  height: 35px;
+}
+
+.nft-component__author-name strong {
+  color: white;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  color: white;
+}
